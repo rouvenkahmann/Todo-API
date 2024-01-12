@@ -1,0 +1,164 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #121212;
+  color: #c4c4c4;
+  margin: 0;
+}
+
+h1 {
+  color: #61dafb;
+}
+
+.input-container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#input-todo {
+  width: 300px;
+  height: 40px;
+  font-size: 1.5rem;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #34443c;
+  color: #c4c4c4;
+}
+
+#add-todo {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  border: none;
+  background-color: #2d3b34;
+  cursor: pointer;
+  color: #c4c4c4;
+}
+
+.todo-container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #34443c;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  padding: 2px;
+  color: #c4c4c4;
+}
+
+.todo-info {
+  display: flex;
+  gap: 5px;
+}
+
+.todo-btn {
+  margin-right: 5px; /* Reduced margin between buttons */
+}
+
+.todo-btn > button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+  padding: 3px 6px; /* Smaller padding for buttons */
+  font-size: 1rem; /* Smaller font size */
+  border-radius: 5px;
+  cursor: pointer;
+  color: #c4c4c4;
+}
+
+#delete-selected {
+  background-color: #751b1b;
+  color: #c4c4c4;
+  border: none;
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+
+.todo-edit {
+  background-color: #164793;
+}
+
+.todo-delete {
+  background-color: #751b1b;
+}
+
+.modal-background {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  background-color: #34443c;
+  width: 300px;
+  margin: 25% auto;
+  border-radius: 10px;
+  padding: 10px 20px 30px 20px;
+  color: #c4c4c4;
+}
+
+.modal-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.close-modal {
+  font-size: 1.5rem;
+  color: #c4c4c4;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+#edit-todo-name {
+  width: 250px;
+  height: 25px;
+  font-size: 1.25rem;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2d3b34;
+  color: #c4c4c4;
+}
+
+#edit-todo-completed-wrapper {
+  font-size: 1.25rem;
+}
+
+#save-todo {
+  background-color: #164793;
+  color: #c4c4c4;
+  border: none;
+  cursor: pointer;
+  border: 20px;
+  font-size: 1.25rem;
+  width: 75px;
+  height: 40px;
+  border-radius: 5px;
+}
